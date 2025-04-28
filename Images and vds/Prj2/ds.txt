@@ -1,0 +1,1 @@
+prj2 is an desktop app manage cabinet medical ,serve to manage the medicament doctors secretaires,stocks of medicals supplies , patiens and they sheets etc...  his website https://rayan3230.github.io/Java_website/

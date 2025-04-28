@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 4: Loup Garou Game</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Add Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body class="project-detail-page">
+
+    <!-- NEW UNIFIED HEADER -->
+    <header id="main-header">
+        <div class="container">
+            <span class="header-placeholder">Rayan M.</span>
+            <!-- <a href="index.html#hero" class="logo">RM</a> -->
+            <nav id="main-nav">
+                <ul>
+                     <li><a href="index.html#hero" class="nav-link">Home</a></li>
+                     <li><a href="index.html#about" class="nav-link">About</a></li>
+                     <li><a href="index.html#skills" class="nav-link">Skills</a></li>
+                     <li><a href="index.html#projects" class="nav-link active">Projects</a></li>
+                     <li><a href="index.html#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <button id="theme-toggle" class="theme-toggle-button" aria-label="Toggle theme">
+                    <i class="fas fa-sun"></i> 
+                </button>
+                <button id="mobile-menu-toggle" aria-label="Toggle Menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content Area -->
+    <main>
+
+        <div class="project-header">
+             <div class="container">
+                 <a href="index.html#projects" class="back-link">&larr; Back to Projects</a>
+                 <h1>Project 4: Loup Garou Game</h1>
+             </div>
+        </div>
+
+        <div class="project-detail">
+            <div class="container">
+                <section class="content-section">
+                    <h2>Project Description</h2>
+                    <p>This is a mobile implementation of the popular social deduction game <strong>Loup Garou (Werewolf)</strong>, built using Flutter/Dart.</p>
+                    
+                    <h3>Key Features:</h3>
+                    <ul>
+                        <li>Multiplayer gameplay</li>
+                        <li>Implementation of game roles and rules</li>
+                        <li>Real-time interaction between players</li>
+                        <li>User interface designed for mobile devices</li>
+                    </ul>
+
+                    <h3>Technologies Used:</h3>
+                    <ul class="project-skills-list">
+                        <li><i class="fab fa-flutter"></i> Flutter</li>
+                        <li><i class="fab fa-dart"></i> Dart</li>
+                    </ul>
+
+                    <p><a href="https://github.com/rayan3230/APP_Project_Loupgarou" target="_blank" rel="noopener noreferrer" class="btn btn-primary github-link">View on GitHub <i class="fab fa-github"></i></a></p>
+                </section>
+
+                <section class="content-section">
+                    <h2>Gallery</h2>
+                    <div class="image-gallery">
+                        <img src="Images and vds/prj4/Screenshot 2025-04-28 002532.png" alt="Loup Garou Game Screenshot 1">
+                        <img src="Images and vds/prj4/Screenshot 2025-04-28 002520.png" alt="Loup Garou Game Screenshot 2">
+                        <img src="Images and vds/prj4/Screenshot 2025-04-28 002507.png" alt="Loup Garou Game Screenshot 3">
+                        <img src="Images and vds/prj4/Screenshot 2025-04-28 002422.png" alt="Loup Garou Game Screenshot 4">
+                        <img src="Images and vds/prj4/Screenshot 2025-04-28 002338.png" alt="Loup Garou Game Screenshot 5">
+                        <img src="Images and vds/prj4/Screenshot 2025-04-28 002316.png" alt="Loup Garou Game Screenshot 6">
+                        <!-- Add more images if needed -->
+                    </div>
+                </section>
+            </div>
+        </div>
+
+        <!-- Footer outside main content -->
+        <footer id="main-footer">
+            <p class="copyright">&copy; <span id="current-year"></span> Rayan Mouzali</p>
+        </footer>
+
+    </main> <!-- End main -->
+
+    <!-- Lightbox Structure -->
+    <div id="lightbox" class="lightbox">
+        <span class="lightbox-close">&times;</span>
+        <img class="lightbox-content" id="lightbox-img">
+        <div id="lightbox-caption" class="lightbox-caption"></div>
+    </div>
+
+    <!-- Include script.js at the end for lightbox functionality -->
+    <script src="script.js"></script> 
+</body>
+</html> 

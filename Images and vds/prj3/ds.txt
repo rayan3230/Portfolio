@@ -1,0 +1,1 @@
+prj3 is an web site using Django and react manage the schudels of university by generating them displaying them,with a teacher and admin view is relate to the first prj1
