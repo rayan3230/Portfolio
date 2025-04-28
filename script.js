@@ -1,22 +1,20 @@
 document.addEventListener('DOMContentLoaded', () => {
 
-    // --- Mobile Menu Toggle --- 
+  
     const mobileMenuButton = document.getElementById('mobile-menu-toggle');
     const mainNav = document.getElementById('main-nav');
-    const bodyElement = document.body; // Reusing from theme switcher
+    const bodyElement = document.body; 
 
     if (mobileMenuButton && mainNav) {
         mobileMenuButton.addEventListener('click', () => {
             mainNav.classList.toggle('open');
-            // Optionally, toggle a class on body to prevent scrolling when menu is open
             bodyElement.classList.toggle('mobile-nav-open'); 
             
-            // Change icon based on open state
             const icon = mobileMenuButton.querySelector('i');
             if (mainNav.classList.contains('open')) {
-                icon.className = 'fas fa-times'; // Change to close icon
+                icon.className = 'fas fa-times'; 
             } else {
-                icon.className = 'fas fa-bars'; // Change back to bars icon
+                icon.className = 'fas fa-bars'; 
             }
         });
     }
@@ -29,13 +27,12 @@ document.addEventListener('DOMContentLoaded', () => {
                     mainNav.classList.remove('open');
                     bodyElement.classList.remove('mobile-nav-open');
                      const icon = mobileMenuButton.querySelector('i');
-                     icon.className = 'fas fa-bars'; // Change back to bars icon
+                     icon.className = 'fas fa-bars'; 
                 }
             });
         });
     }
 
-    // --- Theme Switcher Logic ---
     const themeToggleButton = document.getElementById('theme-toggle');
     const currentTheme = localStorage.getItem('theme');
     const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
@@ -45,22 +42,21 @@ document.addEventListener('DOMContentLoaded', () => {
     function applyTheme(theme) {
         if (theme === 'dark') {
             bodyElement.classList.add('dark-theme');
-            if (toggleIcon) toggleIcon.className = 'fas fa-moon'; // Set moon icon
+            if (toggleIcon) toggleIcon.className = 'fas fa-moon'; 
             localStorage.setItem('theme', 'dark');
         } else {
             bodyElement.classList.remove('dark-theme');
-            if (toggleIcon) toggleIcon.className = 'fas fa-sun'; // Set sun icon
+            if (toggleIcon) toggleIcon.className = 'fas fa-sun'; 
             localStorage.setItem('theme', 'light');
         }
     }
 
-    // Set initial theme based on localStorage or system preference
     if (currentTheme) {
         applyTheme(currentTheme);
     } else if (prefersDark) {
-        applyTheme('dark'); // Default to system preference if dark
+        applyTheme('dark'); 
     } else {
-        applyTheme('light'); // Default to light otherwise
+        applyTheme('light');
     }
     
     // Add event listener for the button
