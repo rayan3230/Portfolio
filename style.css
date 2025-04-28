@@ -57,6 +57,7 @@ body {
     --nav-link-active: var(--nav-link-active-light);
     --header-shadow: var(--header-shadow-light);
     --shadow-rgb: var(--shadow-rgb-light);
+    overflow-x: hidden;
 }
 
 /* === Apply Dark Theme Variables When .dark-theme Class is Present === */
