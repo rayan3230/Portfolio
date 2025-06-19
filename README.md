@@ -16,6 +16,14 @@ This repository contains the code for my personal portfolio website, showcasing 
 *   **Smooth Scrolling & Animations:** Enhances user experience.
 *   **Image Lightbox:** For viewing project gallery images.
 
+## 🗂️ Featured Projects
+
+- **Teacher Schedule Apps:** Mobile app for teachers to manage schedules and exchanges ([details](htmls/project1.html))
+- **Medical Cabinet Manager:** Desktop application to streamline medical office operations ([details](htmls/project2.html))
+- **University Scheduler:** Web application for generating and managing university schedules ([details](htmls/project3.html))
+- **Loup Garou Game:** Multiplayer mobile game implementation of Werewolf ([details](htmls/project4.html))
+- **Vertex - University Student Resources Platform:** Web platform providing resources and documents for university students ([details](htmls/project5.html), [GitHub](https://github.com/wassimmho/Vertex.git))
+
 ## 🚀 Technologies Used
 
 *   **Frontend:** HTML5, CSS3, JavaScript

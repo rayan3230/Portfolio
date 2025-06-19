@@ -1,0 +1,1 @@
+Vertex is a web platform for university students to access and share study resources, documents, and exam materials.
