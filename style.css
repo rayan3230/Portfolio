@@ -1002,3 +1002,16 @@ body.dark-theme .back-link:hover {
     .project-header h1 { font-size: 1.8em; }
     .project-detail h2 { font-size: 1.4em; }
 } 
+.profile-circle-img {
+  width: 120px;         /* Adjust size as needed */
+  height: 120px;
+  object-fit: cover;
+  
+  object-position: 60% 50%;
+  border-radius: 50%;
+  border: 3px solid #fff; /* Optional: white border */
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1); /* Optional: subtle shadow */
+  display: block;
+  margin:  auto;
+  position: relative;
+}
