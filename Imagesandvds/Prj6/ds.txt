@@ -1,0 +1,9 @@
+About Serie Tracker
+Serie Tracker is your personal companion for discovering, tracking, and managing your favorite TV series. Whether you're a binge-watcher or a casual viewer, our platform helps you keep track of what you've watched, explore new releases, and organize your watchlist with ease.
+
+✔️ Track your watched and unwatched series
+✔️ Discover trending and new releases
+✔️ Maintain a wishlist for future viewing
+✔️ View detailed information and posters for each show
+✔️ Enjoy a modern, user-friendly interface
+Built with React and Django, Serie Tracker is designed to make your TV experience organized and enjoyable. Happy watching!
