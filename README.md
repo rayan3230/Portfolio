@@ -24,6 +24,7 @@ This repository contains the code for my personal portfolio website, showcasing 
 - **Loup Garou Game:** Multiplayer mobile game implementation of Werewolf ([details](htmls/project4.html))
 - **Vertex - University Student Resources Platform:** Web platform providing resources and documents for university students ([details](htmls/project5.html), [GitHub](https://github.com/wassimmho/Vertex.git))
 - **Serie Tracker:** A web application for discovering, tracking, and managing your favorite TV series ([details](htmls/project6.html))
+- **NEXORA Platform:** Comprehensive project management with client tracking & analytics. ([details](htmls/project7.html))
 
 ## 🚀 Technologies Used
 
@@ -43,3 +44,5 @@ To run this project locally:
 1.  Clone the repository: `git clone https://github.com/rayan3230/Portfolio.git`
 2.  Navigate to the project directory: `cd Portfolio`
 3.  Open the `index.html` file in your web browser.
+
+## 📫 Let's Connect!

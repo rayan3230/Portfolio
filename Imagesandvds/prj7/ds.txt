@@ -1,0 +1,8 @@
+Manager_Web - A comprehensive project management web application built with Django REST API and React. Streamline your business operations with powerful client management, project tracking, and business analytics tools.
+Key Features:
+📊 Client Management: Store contact info, track projects & revenue
+�� Project Tracking: Monitor deadlines, budgets, and progress
+💰 Budget Management: Track payments in Algerian Dinar (DA)
+📈 Business Analytics: Dashboard with insights and metrics
+🔍 Search & Filter: Quick access to clients and projects
+📱 Modern UI: Responsive design with real-time updates
