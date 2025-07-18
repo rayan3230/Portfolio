@@ -122,28 +122,57 @@ document.addEventListener('DOMContentLoaded', () => {
     const lightboxCaption = document.getElementById('lightbox-caption');
     const galleryImages = document.querySelectorAll('.image-gallery .gallery-img'); // Target specific gallery images
     const closeBtn = document.querySelector('.lightbox-close');
+    const lightboxPrev = document.querySelector('.lightbox-prev');
+    const lightboxNext = document.querySelector('.lightbox-next');
+    let currentGalleryImages = [];
+    let currentImageIndex = 0;
+
+    function showLightboxImage(index) {
+        if (currentGalleryImages.length === 0) return;
+        if (index < 0) index = currentGalleryImages.length - 1;
+        if (index >= currentGalleryImages.length) index = 0;
+        currentImageIndex = index;
+        const img = currentGalleryImages[currentImageIndex];
+        lightboxImg.src = img.src;
+        lightboxCaption.innerHTML = img.alt;
+    }
 
     if (lightbox && lightboxImg && lightboxCaption && closeBtn) {
-        galleryImages.forEach(img => {
+        // Update: select all gallery images on the page
+        currentGalleryImages = Array.from(document.querySelectorAll('.image-gallery .gallery-img'));
+        currentGalleryImages.forEach((img, idx) => {
             img.addEventListener('click', () => {
                 lightbox.style.display = 'block';
-                lightboxImg.src = img.src;
-                lightboxCaption.innerHTML = img.alt;
-                document.body.style.overflow = 'hidden'; // Prevent scrolling background
+                document.body.style.overflow = 'hidden';
+                showLightboxImage(idx);
             });
         });
+
+        // Next/Prev button logic
+        if (lightboxPrev) {
+            lightboxPrev.addEventListener('click', (e) => {
+                e.stopPropagation();
+                showLightboxImage(currentImageIndex - 1);
+            });
+        }
+        if (lightboxNext) {
+            lightboxNext.addEventListener('click', (e) => {
+                e.stopPropagation();
+                showLightboxImage(currentImageIndex + 1);
+            });
+        }
 
         // Close lightbox when clicking the close button
         closeBtn.addEventListener('click', () => {
             lightbox.style.display = 'none';
-            document.body.style.overflow = ''; // Restore scrolling
+            document.body.style.overflow = '';
         });
 
-        // Close lightbox when clicking outside the image
+        // Close lightbox when clicking outside the image/buttons
         lightbox.addEventListener('click', (e) => {
-            if (e.target === lightbox) { // Only close if clicking the background overlay
+            if (e.target === lightbox) {
                 lightbox.style.display = 'none';
-                document.body.style.overflow = ''; // Restore scrolling
+                document.body.style.overflow = '';
             }
         });
     } else {
